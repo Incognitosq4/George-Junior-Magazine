@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>George Junior Magazine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-bottom: 30px;
+    }
+
+    .banner {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>George Junior Magazine</h1>
+  <h2>JFK SR & JFK Jr Family Questionnaire</h2>
+  <p>About Their Lives & Murders.</p>
+
+  <h3>JFK SR Questions</h3>
+  <div class="question">
+    <p>Question 1: When was John F. Kennedy (JFK SR) elected President of the United States?</p>
+    <button onclick="revealAnswer(1)">Reveal Answer</button>
+    <div id="answer1" style="display: none;">
+      <p>John F. Kennedy was elected President of the United States in 1960.</p>
+    </div>
+  </div>
+  <div class="question">
+    <p>Question 2: What was John F. Kennedy's political party?</p>
+    <button onclick="revealAnswer(2)">Reveal Answer</button>
+    <div id="answer2" style="display: none;">
+      <p>John F. Kennedy was a member of the Democratic Party.</p>
+    </div>
+  </div>
+
+  <h3>JFK JR Questions</h3>
+  <div class="question">
+    <p>Question 3: What was John F. Kennedy Jr.'s profession?</p>
+    <button onclick="revealAnswer(3)">Reveal Answer</button>
+    <div id="answer3" style="display: none;">
+      <p>John F. Kennedy Jr. was a lawyer and journalist.</p>
+    </div>
+  </div>
+
+  <h3>Special Group Question</h3>
+  <div class="question">
+    <p>Question 4: What is the 'CIA - 5412 - COMMITTEE - SPECIAL GROUP'?</p>
+    <button onclick="revealAnswer(4)">Reveal Answer</button>
+    <div id="answer4" style="display: none;">
+      <p>The CIA - 5412 - COMMITTEE - SPECIAL GROUP was responsible for overseeing covert operations during the Cold War.</p>
+    </div>
+  </div>
+
+  <h3>Pictures of JFK SR & JFK Jr</h3>
+  <div class="banner">
+    <img src="path/to/jfk_sr.jpg" alt="John F. Kennedy (JFK SR)">
+    <img src="path/to/jfk_jr.jpg" alt="John F. Kennedy Jr.">
+  </div>
+
+  <script>
+    function revealAnswer(questionNumber) {
+      var answerElement = document.getElementById("answer" + questionNumber);
+      answerElement.style.display = "block";
+    }
+  </script>
+</body>
+</html>
